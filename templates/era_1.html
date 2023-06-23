@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="./templates_css/title.css">
+        <title>おすすめ大河ドラマ診断</title>
+    </head>
+    <body>
+        <p>質問1_1: 時代にこだわりますか？</p>
+        <form method='post'>
+            <select id='form' name='form' value='form'>
+                <option value='未回答'>--回答を選択--</option>
+                <option value='こだわらない'>こだわらない</option>
+                <option value='ややこだわる'>ややこだわる</option>
+                <option value='強くこだわる'>強くこだわる</option>
+            </select>
+            <button class='next' type='submit'>回答</button>
+        </form>
+        <p>あなたの回答: {{ a_1 }}</P>
+        {% if a_1=='こだわらない' %}
+        <form action='/step3'>
+            <button class='next' type='submit'>次へ</button>
+        </form>
+        {% elif a_1=='ややこだわる' or a_1=='強くこだわる' %}
+        <form action='/step2'>
+            <button class='next' type='submit'>次へ</button>
+        </form>
+        {% endif %}
+    </body>
+</html>

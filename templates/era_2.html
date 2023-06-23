@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="./templates_css/title.css">
+        <title>おすすめ大河ドラマ診断</title>
+    </head>
+    <body>
+        <p>質問1_2: 大河ドラマで見たい時代を選んでください</p>
+        <form method='post'>
+            <select id='form' name='form' value='form'>
+                <option value='未回答'>--回答を選択--</option>
+                <option value='平安'>平安</option>
+                <option value='平安末期〜鎌倉前期'>平安末期〜鎌倉前期</option>
+                <option value='戦国'>戦国</option>
+                <option value='江戸中期'>江戸中期</option>
+                <option value='幕末〜明治'>幕末〜明治</option>
+                <option value='大正〜昭和'>大正〜昭和</option>
+            </select>
+            <button class='next' type='submit'>回答</button>
+        </form>
+        <p>あなたの回答: {{ a_2 }}</p>
+        <form action='/step3'>
+            <button class='next' type='submit'>次へ</button>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="./templates_css/title.css">
+        <title>おすすめ大河ドラマ診断</title>
+    </head>
+    <body>
+        <p>質問5: 好きな脚本家さんを選んでください</p>
+        <form method='post'>
+            <select id='form' name='form' value='form'>
+                <option value='未回答'>--回答を選択--</option>
+                <option value='大石静'>大石静</option>
+                <option value='藤本有紀'>藤本有紀</option>
+                <option value='三谷幸喜'>三谷幸喜</option>
+                <option value='森下佳子'>森下佳子</option>
+                <option value='宮藤官九郎'>宮藤官九郎</option>
+                <option value='池端俊策'>池端俊策</option>
+                <option value='大森美香'>大森美香</option>
+                <option value='古沢良太'>古沢良太</option>
+                <option value='いない'>いない</option>
+            </select>
+            <button class='next' type='submit'>回答</button>
+        </form>
+        <p>あなたの回答: {{ a_6 }}</p>
+        <form action='/result'>
+            <button class='next' type='submit'>次へ</button>
+        </form>
+    </body>
+</html>

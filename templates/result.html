@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="./templates_css/title.css">
+        <title>おすすめ大河ドラマ診断</title>
+    </head>
+    <body>
+        <p>診断結果</p>
+        <div class='rank'>
+            {% for i in range(3) %}
+            <p>第{{ i+1 }}位: {{ final_result[i] }}</p>
+            {% endfor %}
+        </div>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="./templates_css/title.css">
+        <title>おすすめ大河ドラマ診断</title>
+    </head>
+    <body>
+        <p>質問4: この中で三番目に好きな俳優さんを選んでください</p>
+        <form method='post'>
+            <select id='form' name='form' value='form'>
+                <option value='吉高由里子'>--回答を選択--</option>
+                <option value='柄本佑'>柄本佑</option>
+                <option value='松山ケンイチ'>松山ケンイチ</option>
+                <option value='深田恭子'>深田恭子</option>
+                <option value='玉木宏'>玉木宏</option>
+                <option value='小栗旬'>小栗旬</option>
+                <option value='小池栄子'>小池栄子</option>
+                <option value='坂口健太郎'>坂口健太郎</option>
+                <option value='大泉洋'>大泉洋</option>
+                <option value='中川大志'>中川大志</option>
+                <option value='山本耕史'>山本耕史</option>
+                <option value='長谷川博己'>長谷川博己</option>
+                <option value='染谷将太'>染谷将太</option>
+                <option value='川口春奈'>川口春奈</option>
+                <option value='柴咲コウ'>柴咲コウ</option>
+                <option value='高橋一生'>高橋一生</option>
+                <option value='堺雅人'>堺雅人</option>
+                <option value='草刈正雄'>草刈正雄</option>
+                <option value='長澤まさみ'>長澤まさみ</option>
+                <option value='松本潤'>松本潤</option>
+                <option value='有村架純'>有村架純</option>
+                <option value='山田裕貴'>山田裕貴</option>
+                <option value='横浜流星'>横浜流星</option>
+                <option value='福山雅治'>福山雅治</option>
+                <option value='香取慎吾'>香取慎吾</option>
+                <option value='吉沢亮'>吉沢亮</option>
+                <option value='草彅剛'>草彅剛</option>
+                <option value='六代目中村勘九郎'>六代目中村勘九郎</option>
+                <option value='阿部サダヲ'>阿部サダヲ</option>
+                <option value='役所広司'>役所広司</option>
+                <option value='いない'>いない</option>
+            </select>
+            <button class='next' type='submit'>回答</button>
+        </form>
+        <p>あなたの回答: {{ a_5 }}</p>
+        <form action='/step6'>
+            <button class='next' type='submit'>次へ</button>
+        </form>
+    </body>
+</html>
